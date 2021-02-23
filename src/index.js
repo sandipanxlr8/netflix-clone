@@ -4,11 +4,15 @@ import 'normalize.css';
 
 import App from './app';
 import { GlobalStyles } from './globalStyles';
+import { firebase } from './lib/firebase.prod';
+import { FirebaseContext } from './context/firebase';
 
 ReactDOM.render(
   <>
-    <GlobalStyles />
-    <App />
+    <FirebaseContext.Provider value={{ firebase }}>
+      <GlobalStyles />
+      <App />
+    </FirebaseContext.Provider>
   </>,
   document.querySelector('#root')
 );
