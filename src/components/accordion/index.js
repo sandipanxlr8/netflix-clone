@@ -6,7 +6,7 @@ import {
   Title,
   Item,
   Header,
-  Body
+  Body,
 } from "./styles/accordian";
 
 const ToggleContext = createContext();
@@ -41,10 +41,11 @@ Accordian.Header = function AccordianHeader({ children, ...restProps }) {
       {...restProps}
     >
       {children}
-      { toggleShow
-        ? <img src="/images/icons/close-slim.png" alt="Close" />
-        : <img src="/images/icons/add.png" alt="Open" />
-      }
+      {toggleShow ? (
+        <img src="netflix-clone/images/icons/close-slim.png" alt="Close" />
+      ) : (
+        <img src="netflix-clone/images/icons/add.png" alt="Open" />
+      )}
     </Header>
   );
 };
@@ -53,4 +54,4 @@ Accordian.Body = function Accordian({ children, ...restProps }) {
   const { toggleShow } = useContext(ToggleContext);
 
   return toggleShow ? <Body {...restProps}>{children}</Body> : null;
-}
+};

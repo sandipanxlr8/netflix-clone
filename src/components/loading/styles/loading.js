@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components/macro';
+import styled, { createGlobalStyle } from "styled-components/macro";
 
 export const LockBody = createGlobalStyle`
   body{
@@ -20,11 +20,11 @@ export const Spinner = styled.div`
   z-index: 999;
 
   :after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
-    background-image: url(/images/misc/spinner.png);
+    background-image: url(/netflix-clone/images/misc/spinner.png);
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: -150px;
