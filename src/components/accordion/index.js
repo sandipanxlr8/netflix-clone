@@ -42,9 +42,9 @@ Accordian.Header = function AccordianHeader({ children, ...restProps }) {
     >
       {children}
       {toggleShow ? (
-        <img src="netflix-clone/images/icons/close-slim.png" alt="Close" />
+        <img src="/netflix-clone/images/icons/close-slim.png" alt="Close" />
       ) : (
-        <img src="netflix-clone/images/icons/add.png" alt="Open" />
+        <img src="/netflix-clone/images/icons/add.png" alt="Open" />
       )}
     </Header>
   );

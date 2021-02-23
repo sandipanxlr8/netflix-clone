@@ -111,7 +111,7 @@ export default function BrowseContainer({ slides }) {
               {slideItem.data.map((item) => (
                 <Card.Item key={item.docId} item={item}>
                   <Card.Image
-                    src={`netflix-clone/images/${category}/${item.genre}/${item.slug}/small.jpg`}
+                    src={`/netflix-clone/images/${category}/${item.genre}/${item.slug}/small.jpg`}
                   />
 
                   <Card.Meta>
