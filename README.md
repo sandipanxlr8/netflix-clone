@@ -12,9 +12,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Open [https://sandipanxlr8.github.io/netflix-clone/](https://sandipanxlr8.github.io/netflix-clone/) signup for an account to browse the App.
 </br>
+</br>
 or just use as a test acoount.
 </br>
 User name -> user@gmail.com 
+</br>
 Password -> password
 
 <br>
